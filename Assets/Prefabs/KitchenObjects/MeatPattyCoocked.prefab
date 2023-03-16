@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2371145163524738490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8871980428320968610}
+  - component: {fileID: -912683023204490495}
+  m_Layer: 0
+  m_Name: MeatPattyCoocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8871980428320968610
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2371145163524738490}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2907663246974213778}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-912683023204490495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2371145163524738490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1fe2bd518f83c24797eef335876d427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kitchenObjectSO: {fileID: 11400000, guid: 7faa13886954b5d438e9f2c0a06a386c, type: 2}
+--- !u!1001 &2067177905647241234
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8871980428320968610}
+    m_Modifications:
+    - target: {fileID: 3812876574508226176, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226176, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812876574508226177, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_Name
+      value: MeatPattyCooked_Visual
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490732961918887185, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.8888638
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490732961918887185, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.9360769
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490732961918887185, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8888638
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490732961918887185, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.085
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490732961918887185, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e879ff1414d1dd64c9ad7b04bffdfaef, type: 3}
+--- !u!4 &2907663246974213778 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3812876574508226176, guid: e879ff1414d1dd64c9ad7b04bffdfaef,
+    type: 3}
+  m_PrefabInstance: {fileID: 2067177905647241234}
+  m_PrefabAsset: {fileID: 0}
