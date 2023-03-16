@@ -20,9 +20,16 @@ public class TutorialUI : MonoBehaviour {
 
     private void Start() {
         GameInput.Instance.OnBindingRebind += GameInput_OnBindingRebind;
+        GameManager.Instance.OnGameStateChanged += GameManager_OnGameStateChanged;
 
         UpdateVisual();
         Show();
+    }
+
+    private void GameManager_OnGameStateChanged(object sender, System.EventArgs e) {
+        if(GameManager.Instance.IsCountingDownForStart()) {
+            Hide();
+        }
     }
 
     private void GameInput_OnBindingRebind(object sender, System.EventArgs e) {
