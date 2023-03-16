@@ -40,6 +40,14 @@ public class GameManager : MonoBehaviour {
 
     private void Start() {
         GameInput.Instance.OnPauseAction += GameInput_OnPauseAction;
+        GameInput.Instance.OnInteractAction += GameInput_OnInteractAction;
+    }
+
+    private void GameInput_OnInteractAction(object sender, EventArgs e) {
+        if(state == State.WaitingForStart) { 
+            state = State.CountDownForStart;
+            OnGameStateChanged?.Invoke(this, EventArgs.Empty);
+        }
     }
 
     private void GameInput_OnPauseAction(object sender, EventArgs e) {
@@ -50,11 +58,6 @@ public class GameManager : MonoBehaviour {
         //Game mode state machine
         switch (state) {
             case State.WaitingForStart:
-                waitingForStartTimer -= Time.deltaTime;
-                if(waitingForStartTimer <= 0 ) {
-                    state = State.CountDownForStart;
-                    OnGameStateChanged?.Invoke(this, EventArgs.Empty);
-                }
                 break; 
             case State.CountDownForStart:
                 countDownForStartTimer -= Time.deltaTime;
