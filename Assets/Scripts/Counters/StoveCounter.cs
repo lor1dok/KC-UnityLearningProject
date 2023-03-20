@@ -78,6 +78,10 @@ public class StoveCounter : BaseCounter, IHasProgress {
                         KitchenObject.SpawnKitchenObject(burningRecipeSO.output, this);
                         state = State.Burned;
 
+                        OnProgressChange?.Invoke(this, new IHasProgress.OnProgressChangeEventArgs {
+                            progressNormalized = 0
+                        });
+
                         OnStateChanged?.Invoke(this, new OnStateChangedEventArgs {
                             state = state,
                         });
@@ -178,5 +182,9 @@ public class StoveCounter : BaseCounter, IHasProgress {
             }
         }
         return null;
+    }
+
+    public bool IsFried() {
+        return state == State.Fried;
     }
 }
